@@ -1,0 +1,12 @@
+data_bintang=read.delim("clipboard")
+hist(data_bintang$AmountSpent)
+bintang=density(data_bintang$AmountSpent)
+plot(bintang)
+
+
+library(ggplot2)
+data_bintang=read.delim("clipboard")
+qplot(data_bintang$SqFt, data_bintang$Price)
+qplot(data_bintang$Bedrooms, data_bintang$Price)
+qplot(data_bintang$Bathrooms, data_bintang$Price)
+qplot(data_bintang$Offers, data_bintang$Price)
